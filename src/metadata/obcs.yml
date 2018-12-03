@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/obcs
+
+idspace: OBCS
+base_url: /obo/obcs
+
+products:
+- obcs.owl: https://raw.githubusercontent.com/obcs/ontology-for-biological-and-clinical-statistics/master/obcs.owl
+- obcs.obo: https://raw.githubusercontent.com/obcs/ontology-for-biological-and-clinical-statistics/master/obcs.obo
+
+term_browser: ontobee
+example_terms:
+- OBCS_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/obcs/ontology-for-biological-and-clinical-statistics/v
+
+- prefix: /tracker/
+  replacement: https://github.com/obcs/ontology-for-biological-and-clinical-statistics/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/OBCS?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/obcs/ontology-for-biological-and-clinical-statistics/master/

@@ -1,0 +1,28 @@
+Prefix(:=<http://purl.obolibrary.org/obo/obcs.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/obcs.owl>
+Import(<http://purl.obolibrary.org/obo/obcs/imports/obi_import.owl>)
+Import(<http://purl.obolibrary.org/obo/obcs/imports/ro_import.owl>)
+Import(<http://purl.obolibrary.org/obo/obcs/imports/pato_import.owl>)
+Import(<http://purl.obolibrary.org/obo/obcs/imports/stato_import.owl>)
+Annotation(rdfs:comment "Ontology for Biological and Clinical Statistics")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_00000000>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/OBCS_00000000> (obcs)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBCS_00000000> "obcs"@en)
+
+
+)
